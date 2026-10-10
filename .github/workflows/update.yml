@@ -1,7 +1,9 @@
 name: Update Subscriptions
 
 on:
-  workflow_dispatch:  # 仅保留手动触发按钮
+  schedule:
+    - cron: '0 */6 * * *'  # 每6小时自动更新（UTC）
+  workflow_dispatch:
 
 jobs:
   build:
