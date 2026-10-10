@@ -12,24 +12,15 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "152.53.1.40",
-      "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
+      "server": "5.254.51.109",
+      "server_port": 9443,
+      "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
-        }
+        "server_name": "keyhop-voxility-at.dynuddns.com",
+        "insecure": false
       }
     },
     {

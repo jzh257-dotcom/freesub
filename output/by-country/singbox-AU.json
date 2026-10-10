@@ -4,19 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "152.67.115.203",
+      "server": "51.161.204.244",
       "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
       }
     },
     {
@@ -34,23 +39,64 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "au1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "d6fc32ed-05de-430b-99ca-3edc9185e79b",
-      "flow": "xtls-rprx-vision",
+      "server": "sy2.australiacaregroup.site",
+      "server_port": 10002,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
+        "server_name": "sy2.australiacaregroup.site",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
-          "short_id": "e6a5a4a9115456de"
         }
       }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "server": "sy2.australiacaregroup.site",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "sy2.australiacaregroup.site",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+      "server": "152.67.115.203",
+      "server_port": 443,
+      "password": "633bc3be486b646190661ac2387c150a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
+      "server": "137.23.2.56",
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
     },
     {
       "type": "selector",
@@ -59,7 +105,10 @@
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ]
     },
     {
@@ -68,7 +117,10 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
