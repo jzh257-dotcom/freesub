@@ -4,27 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 42.200.173.5
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 8.6.112.242
   port: 443
   udp: true
   type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
+  uuid: 64726966-0000-4000-8000-740000000000
   tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /drift?ed
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -34,57 +42,24 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  server: 103.25.202.102
-  port: 443
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
