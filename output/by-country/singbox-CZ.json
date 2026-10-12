@@ -6,6 +6,39 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "104.21.39.30",
+      "server_port": 80,
+      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTEwyZVI5T3BYZDBxTzhPRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "172.64.80.1",
+      "server_port": 443,
+      "password": "bpb-trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.herogoing.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr?ed=2560",
+        "headers": {
+          "Host": "vless.herogoing.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -26,7 +59,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
       "server": "95.85.238.173",
       "server_port": 443,
       "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
@@ -42,7 +75,9 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe",
+        "🇨🇿 捷克 (Czech) 03 - xiaohe",
+        "🇨🇿 捷克 (Czech) 04 - xiaohe"
       ]
     },
     {
@@ -50,7 +85,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe",
+        "🇨🇿 捷克 (Czech) 03 - xiaohe",
+        "🇨🇿 捷克 (Czech) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
