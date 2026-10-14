@@ -15,13 +15,19 @@ proxies:
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 218.237.185.234
+  server: p141.panda001.net
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
 - name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
   server: 206.1.102.81
   port: 17915
   udp: true
@@ -29,14 +35,8 @@ proxies:
   uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
   tls: true
   servername: googol.wookshop.ir
-  skip-cert-verify: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
